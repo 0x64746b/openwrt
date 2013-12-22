@@ -1,0 +1,7 @@
+config wifi-iface 'private_wifi'
+    option device 'radio0'
+    option network 'private_wifi'
+    option mode 'ap'
+    option ssid '<NETWORK_NAME>'
+    option encryption 'psk2'
+    option key '<PASSWORD>'

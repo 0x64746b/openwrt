@@ -1,0 +1,4 @@
+config interface 'private_wifi'
+    option proto 'static'
+    option ipaddr '192.168.23.1'
+    option netmask '255.255.255.0'

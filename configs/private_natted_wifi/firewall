@@ -1,0 +1,13 @@
+config zone
+    option 'name' 'private_wifi'
+    option 'network' 'private_wifi'
+    option 'input' 'ACCEPT'
+    option 'output' 'ACCEPT'
+    # Don't forward packets from *another* network *through* this one into a
+    # *third* one. Pakets originating in this network are handled by `output`,
+    # not `forward`, despite the name of the `forwarding` rule below.
+    option 'forward' 'REJECT'
+
+config forwarding
+    option 'src' 'private_wifi'
+    option 'dest' 'wan'
