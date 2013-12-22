@@ -1,0 +1,8 @@
+config wifi-iface 'uplink'
+     option device 'radio0'
+     option network 'uplink'
+     option mode 'sta'
+     option ssid '<my home wifi>'
+     option encryption 'psk2'
+     option bssid '<AP:MA:CA:DD:RE:SS>'
+     option key '<my secret password>'
