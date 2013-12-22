@@ -1,0 +1,7 @@
+config 'dhcp' 'wifi'
+    option 'interface' 'private_wifi'
+    option 'start' '100'
+    option 'limit' '150'
+    option 'leasetime' '12h'
+    # Override DNS server:   as250.net,   berlin.ccc.de,  opennic
+    list 'dhcp_option' '6,194.150.168.168,213.73.91.35,78.138.97.33,'
